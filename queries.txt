@@ -1,0 +1,1 @@
+UPDATE `level` SET `level2`='4' WHERE `user_id` = (SELECT `user_id` FROM `brain` WHERE `email`='freshymc@abv.bg')
