@@ -14,7 +14,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>SuperScript || Register Page</title>
+		<title>BrainShaker || HomePage</title>
 		<!-- CSS Import -->
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<!-- Viewport -->
@@ -39,13 +39,13 @@
 			</li>
 			<li>
 				<a href="gamelist.php">
-					<span>&#xe605;</span>
+					<span>&#xe65d;</span>
 					<p>Challenges</p>
 				</a>
 			</li>
 			<li>
 				<a href="#myprofile">
-					<span>&#xe605;</span>
+					<span>&#xe689;</span>
 					<p>Skills</p>
 				</a>
 			</li>

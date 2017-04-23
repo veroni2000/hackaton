@@ -14,7 +14,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>SuperScript || Register Page</title>
+		<title>BrainShaker || GameList</title>
 		<!-- CSS Import -->
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<!-- Viewport -->

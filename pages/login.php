@@ -26,11 +26,11 @@
 		if(empty($email) || empty($pass)){
 			//Check if empty values module
 			$err++;
-			$errMsg = "Попълни всички полета";
+			$errMsg = "Fill all the fields!";
 		}elseif(!filter_var($email , FILTER_VALIDATE_EMAIL)){
 			//Email Module
 			$err++;
-			$errMsg = "Попълни валидна електронна поща!";
+			$errMsg = "Enter a valid email!";
 		}
 		
 		if(!$err){
@@ -44,7 +44,7 @@
 				header("location: home.php");
 			}else{
 				$err++;
-				$errMsg = "Некоректни данни за влизане!";
+				$errMsg = "Incorrect login data!";
 			}
 		}
 	}
@@ -53,7 +53,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>SuperScript || Register Page</title>
+		<title>BrainShaker || LoginPage</title>
 		<!-- CSS Import -->
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<!-- Viewport -->

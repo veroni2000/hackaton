@@ -32,11 +32,11 @@
 		if(empty($username) || empty($email) || empty($pass)){
 			//Check if empty values module
 			$err++;
-			$errMsg = "Попълни всички полета";
+			$errMsg = "Fill all the fields!";
 		}elseif(!filter_var($email , FILTER_VALIDATE_EMAIL)){
 			//Email Module
 			$err++;
-			$errMsg = "Попълни валидна електронна поща!";
+			$errMsg = "Enter a valid email!";
 		}
 		
 		if(!$err){
@@ -45,8 +45,9 @@
 		
 			if(mysqli_num_rows($select_query) > 0){
 				$err++;
-				$errMsg = "Вече съществува такава Електронна поща!";
+				$errMsg = "This email is already registered.";
 			}else{
+				$errMsg ="Your registration was successful. <a href='login.php' class='link'>Login here.</a>";
 				//Get the date of registration
 				$now = date("Y-m-d");
 				//Insert Query
@@ -61,7 +62,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>SuperScript || Register Page</title>
+		<title>BrainShaker || RegisterPage</title>
 		<!-- CSS Import -->
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<!-- Viewport -->
@@ -71,13 +72,13 @@
 		<form action="#no-js" method="POST" id="form" class="register-form">
 			<fieldset class="input-group">
 				<label class="input-holder">
-					<input type="text" name="username" placeholder="Име на играча" value="<?php if(isset($username)){ echo $username; } ?>">
+					<input type="text" name="username" placeholder="Username" value="<?php if(isset($username)){ echo $username; } ?>">
 				</label>
 				<label class="input-holder">
-					<input type="email" name="email" placeholder="Електронна поща" value="<?php if(isset($email)){ echo $email; }?>">
+					<input type="email" name="email" placeholder="Email" value="<?php if(isset($email)){ echo $email; }?>">
 				</label>
 				<label class="input-holder">
-					<input type="password" name="pass" placeholder="Парола" value="<?php if(isset($pass)){ echo $pass; } ?>">
+					<input type="password" name="pass" placeholder="Password" value="<?php if(isset($pass)){ echo $pass; } ?>">
 				</label>
 			</fieldset>
 			<fieldset class="input-group">
@@ -103,7 +104,7 @@
 				<p class="err"><?php echo $errMsg ?></p>
 			<?php } ?>
 			<!-- Review -->
-			<p class="review">You already have a profile <a href="login.php" class="link">Login here.</a></p>
+			<p class="review">You already have a profile? <a href="login.php" class="link">Login here.</a></p>
 		</form>
 		<script>
 			var form = document.getElementById("form");
