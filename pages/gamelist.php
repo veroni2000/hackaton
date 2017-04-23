@@ -17,6 +17,7 @@
 		<title>BrainShaker || GameList</title>
 		<!-- CSS Import -->
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
+		<link rel="stylesheet" href="../font/font-awesome/css/font-awesome.min.css">
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -24,7 +25,6 @@
 		<nav>
 			<div class="nav-text">
 				<span><?php echo $result_query['username']; ?></span>
-				<span><?php echo "Lvl: 10"?></span>
 			</div>
 			<div class="nav-actions">
 				<a href="../php/logout.php">Log off</a>
@@ -33,30 +33,22 @@
 		<ul class="gamelist">
 			<li>
 				<a href="../games/game1.php">
-					<span>&#xe605;</span>
-					<p>Game 1</p>
+					<span><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+					<p>IQ questions</p>
 				</a>
 			</li>
 			<li>
 				<a href="../games/game2.php">
-					<span>&#xe605;</span>
-					<p>Game 2</p>
+					<span><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+					<p>Number addition</p>
 				</a>
 			</li>
 			<li>
 				<a href="../games/game3.php">
-					<span>&#xe605;</span>
-					<p>Game 3</p>
+					<span><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+					<p>Code</p>
 				</a>
 			</li>
 		</ul>
-		<ul class="gamelist">
-			<li>
-				<a href="../games/game4.php">
-					<span>&#xe605;</span>
-					<p>Game 4</p>
-				</a>
-			</li>
-		<ul>
 	</body>
 </html>

@@ -17,6 +17,7 @@
 		<title>BrainShaker || HomePage</title>
 		<!-- CSS Import -->
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
+		<link rel="stylesheet" href="../font/font-awesome/css/font-awesome.min.css">
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
@@ -24,7 +25,6 @@
 		<nav>
 			<div class="nav-text">
 				<span><?php echo $result_query['username']; ?></span>
-				<span><?php echo "Lvl: 1"?></span>
 			</div>
 			<div class="nav-actions">
 				<a href="../php/logout.php">Log off</a>
@@ -33,20 +33,14 @@
 		<ul class="sections">
 			<li>
 				<a href="#myprofile">
-					<span>&#xe605;</span>
+					<span><i class="fa fa-user" aria-hidden="true"></i></span>
 					<p>My Profile</p>
 				</a>
 			</li>
 			<li>
 				<a href="gamelist.php">
-					<span>&#xe65d;</span>
+					<span><i class="fa fa-trophy" aria-hidden="true"></i></span>
 					<p>Challenges</p>
-				</a>
-			</li>
-			<li>
-				<a href="#myprofile">
-					<span>&#xe689;</span>
-					<p>Skills</p>
 				</a>
 			</li>
 		<ul>
