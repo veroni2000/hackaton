@@ -24,7 +24,7 @@
 		<nav>
 			<div class="nav-text">
 				<span><?php echo $result_query['username']; ?></span>
-				<span><?php echo "Lvl: 10"?></span>
+				<span><?php echo "Lvl: 1"?></span>
 			</div>
 			<div class="nav-actions">
 				<a href="../php/logout.php">Log off</a>
