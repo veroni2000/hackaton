@@ -25,7 +25,7 @@
 		if($_POST['text']==$number) {
 			echo "<script>alert('You win');</script>";
 			//Add 10 points
-			$add_point_query = mysqli_query($conn, "UPDATE `level` SET `level2`= `level2` + '' WHERE `user_id` = (SELECT `user_id` FROM `brain` WHERE `email`='" . $_SESSION['user'] . " LIMIT 1')");
+			$add_point_query = mysqli_query($conn, "UPDATE `level` SET `level2`= (`level2` + 10) WHERE `user_id` = (SELECT `user_id` FROM `brain` WHERE `email`='" . $_SESSION['user'] . "' LIMIT 1)");
 		}else{
 			echo "<script>alert('Wrong answer');</script>";
 		}
